@@ -1,1 +1,134 @@
 /* Put your style information here! */
+/* Add a black background color to the top navigation */
+.topnav {
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #F5F5DC;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+  font-family: Helvetica;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+
+  color: #F5F5DC;
+   border-bottom: 2px solid beige;
+     border-radius: 0px;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+
+.flex-container {
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-top:200px;
+  font-family: Helvetica;
+}
+
+.flex-item:nth-child(1) {
+  order: 0;
+  flex: 0 1 auto;
+  text-align:center;
+  color:#F5F5DC;
+  font-weight: bold;
+
+}
+
+.flex-item:nth-child(2) {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  color:beige;
+  text-align:center;
+  margin: 1.5em;
+  font-size:22px
+}
+
+.flex-item:nth-child(3) {
+  order: 0;
+  flex: 0 1 auto;
+  color:beige;
+  align-self: stretch;
+  font-size:20px
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1em;
+  width: 15%;
+  padding: .8em 1.5em;
+  font-family: Open Sans, Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0.5em auto;
+  border-radius: 5px;
+}
+.btn {background-color: #F3EFE0 ; color: #222222}
+
+.btn:hover {
+  opacity: 0.5;
+}
+/* media queries for smal small screen */
+
+.responsive-width {
+    font-size: 1.3vw;
+}
+@media screen and (max-width: 320px) {
+  .btn {
+    position: relative;
+    font-size: 1.2em;
+    border: 0.2em solid green;
+    color: green;
+    padding: .5em 0.8em;
+    white-space: normal;
+  }
+  .flex-container {
+  justify-content: space-between;
+}
+}
+}
